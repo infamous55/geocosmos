@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>geocosmos. - ACTIVITATI</title>
+
+    <!-- main styling -->
+    <link rel="stylesheet" href="./css/style6.css">
+
+    <!-- logo icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+
+    <!-- tweenmax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- pace.js -->
+    <script src="./js/pace.js"></script>
+
+    <!-- vide.js -->
+    <script src="./js/jquery.vide.js"></script>
+
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+            <div id="top-bar">
+                <span class="logo"><a href="index.html">geocosmos.</a></span>
+
+                <!-- bootstrap menu -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html" class="animated fadeInUp">GEOMETRIA SPATIULUI COSMIC</a>
+                        <a href="origins.html" class="animated fadeInUp">O SCURTA ISTORIE</a>
+                        <a href="shape.html" class="animated fadeInUp">FORMA UNIVERSULUI</a>
+                        <a href="darkmatter.html" class="animated fadeInUp">MATERIA INTUNECATA</a>
+                        <a href="final.html" class="animated fadeInUp">MATEMATICA IN ASTRONOMIE</a>
+                        <a href="quiz.html" class="animated fadeInUp">QUIZ</a>
+                    </div>
+                </div>
+
+                <span style="font-size: 30px;cursor:pointer; padding:1rem;" onclick="openNav()">&#9776;</span>
+
+            </div>
+            <!-- text -->
+            <div class="text-container">
+                <span id="front" class="wow fadeIn">
+                    ACTIVITATI
+                </span>
+            </div>
+            <a id="scroller-link" href="#main"><span id="scroller"></span></a>
+    </header>
+
+    <section id="main">
+        <div class="subtitle">
+            <h3>GRIGORE ANTIPA</h3>
+        </div>
+
+        <div class="first-section">
+            <div class="layer">
+                <div class="activities">
+                    <img src="./img/logos/iau.png" alt="IAU">
+                    <a href="https://www.iau-100.org/projects">Pagina Web</a>
+                    <p>Proiecte globale - Proiectele IAU100 Global sunt activități coordonate la nivel național, regional și internațional, care au fost dezvoltate sub cele 8 teme diferite pentru a atinge obiectivele inițiativei.</p>
+                    <img src="./img/logos/wsw.png" alt="WSW">
+                    <a href="http://www2.rosa.ro/index.php/ro/educatie">Pagina Web</a>
+                    <p>Săptămâna Mondială a Spațiului</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-section">
+            <div class="layer">
+                <div class="activities">
+                    <img src="./img/logos/einstein.png" alt="EINSTEIN">
+                    <a href="https://www.iau-100.org/einstein-schools">Pagina Web</a>
+                    <p>Școala Einstein</p>
+                    <img src="./img/logos/adis.png" alt="ADIS">
+                    <a href="https://www.iau-100.org/astro-day-schools">Pagina Web</a>
+                    <a href="./ppt/prezentare.ppt">Prezentare</a>
+                    <p>Participarea în cadrul proiectului "Ziua Astronomiei în Școli 2019" cu activități de informare privind evenimentul astronomic din data de 11 noiembrie 2019.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    // menu
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+
+    // wow.js
+    new WOW().init();
+    </script>
+</body>
+</html>

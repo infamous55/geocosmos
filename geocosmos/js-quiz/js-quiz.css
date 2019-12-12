@@ -1,0 +1,179 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+/* rester */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* basic styling */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff !important;
+    background: #0F1320;
+}
+
+/* header */
+header {
+    height: 100vh;
+    width: 100%;
+    border-left: none;
+    background: url(../img/quiz-header.jpg) center center/cover;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.logo a:link, .logo a:hover, .logo a:focus, .logo a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+#front {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1188px) {
+    .text-container {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* bootstrap menu */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px;}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* The entire quiz form */
+#quiz-wrap {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+/* final */
+div {
+    font-size: 5rem;
+}
+
+/* Wrapper of each question */
+#quiz-wrap .question {
+    width: 100%;
+    margin: 3rem;
+    padding: 1rem;
+    background: #131931;
+    border: 3px solid #000;
+    border-radius: 1rem;
+}
+
+/* Question */
+#quiz-wrap h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+/* Options */
+#quiz-wrap label {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: .75rem;
+    color: #fff;
+}
+
+#quiz-wrap input{
+    padding: 0.5rem;
+}
+
+/* Submit Button */
+#quiz-wrap input[type=submit] {
+    background: #131931;
+    color: #fff;
+    padding: .75rem;
+    border: 3px solid #000;
+    border-radius: 1rem;
+    padding: .75rem 1rem;
+    margin-top: .75rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    html, body {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>geocosmos. - MATEMATICA IN ASTRONOMIE</title>
+
+    <!-- logo icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+
+    <!-- style3.css -->
+    <link rel="stylesheet" href="./css/style5.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+
+    <!-- tweenmax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- pace.js -->
+    <script src="./js/pace.js"></script>
+
+    <!-- vide.js -->
+    <script src="./js/jquery.vide.js"></script>
+
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+            <div id="top-bar">
+                <span class="logo"><a href="index.html">geocosmos.</a></span>
+
+                <!-- bootstrap menu -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html" class="animated fadeInUp">GEOMETRIA SPATIULUI COSMIC</a>
+                        <a href="origins.html" class="animated fadeInUp">O SCURTA ISTORIE</a>
+                        <a href="shape.html" class="animated fadeInUp">FORMA UNIVERSULUI</a>
+                        <a href="darkmatter.html" class="animated fadeInUp">MATERIA INTUNECATA</a>
+                        <a href="activities.html" class="animated fadeInUp">ACTIVITATI</a>
+                        <a href="quiz.html" class="animated fadeInUp">QUIZ</a>
+                    </div>
+                </div>
+
+                <span style="font-size: 30px;cursor:pointer; padding:1rem;" onclick="openNav()">&#9776;</span>
+
+            </div>
+            <!-- text -->
+            <div class="text-container">
+                <span id="front" class="wow fadeIn">
+                    MATEMATICA IN ASTRONOMIE
+                </span>
+            </div>
+    </header>
+
+    <section id="content">
+        <div class="dual-container">
+            <img src="./img/telescope-final.jpg" class="wow fadeInLeft">
+            <div class="text wow fadeInUp">
+                <p>
+                    Astronomii folosesc matematica mereu. Un mod de a o folosi este atunci când se uită la corpuri cerești cu un telescop. Camera care este atașată telescopului reține o serie de numere, iar aceste numere reprezintă câtă lumină emit diferitele obiecte cerești, tipul de lumina, etc. Pentru a înțelege informația pe care numerele o conțin, se folosesc matematica și statistica să interpreteze rezultatele.
+                </p>
+    
+                <p>
+                    Alt mod în care astronomii folosesc matematica este atunci când formează și testează teorii legate de legile care guvernează corpurile cerești. Teoriile conțin formule care definesc cantitățile in funcție de celelalte (un exemplu foarte simpu este a doua lege a lui Newton, fortă este egală cu masa ori accelerația). Pentru a putea testa aceste teorii și a le folosi pentru a face preziceri a ceea ce vor observa, astronomii au nevoie de matematică.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="links">
+        <h3>Află mai multe: </h3>
+        <div class="aligner">
+            <div class="column">
+                <a href="./pdfs/aStudentsGuideToMathematicsOfAstronomy.pdf">Ghidul unui Student</a>
+            </div>
+            <div class="column">
+                <a href="./pdfs/geometrieSiMecanicaCereasca.pdf">Geometrie si Mecanica</a>
+            </div>
+            <div class="column">
+                <a href="./pdfs/trigonometrieSferaCereasca.pdf">Trigronometria</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    // menu
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+
+    // wow.js
+    new WOW().init();
+    </script>
+</body>
+</html>

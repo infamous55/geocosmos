@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>geocosmos. - QUIZ</title>
+
+    <!-- logo icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./js-quiz/js-quiz.css">
+
+    <!-- engine + databaase -->
+    <script src="./js-quiz/js-quiz-questions.js"></script>
+    <script src="./js-quiz/js-quiz.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="top-bar">
+                <span class="logo"><a href="index.html">geocosmos.</a></span>
+
+                <!-- bootstrap menu -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html" class="animated fadeInUp">GEOMETRIA SPATIULUI COSMIC</a>
+                        <a href="origins.html" class="animated fadeInUp">O SCURTA ISTORIE</a>
+                        <a href="shape.html" class="animated fadeInUp">FORMA UNIVERSULUI</a>
+                        <a href="darkmatter.html" class="animated fadeInUp">MATERIA INTUNECATA</a>
+                        <a href="final.html" class="animated fadeInUp">MATEMATICA IN ASTRONOMIE</a>
+                        <a href="activities.html" class="animated fadeInUp">ACTIVITATI</a>
+                    </div>
+                </div>
+
+                <span style="font-size: 30px;cursor:pointer; padding:1rem;" onclick="openNav()">&#9776;</span>
+
+            </div>
+            <!-- text -->
+            <div class="text-container">
+                <span id="front" class="wow fadeIn">
+                    QUIZ
+                </span>
+            </div>
+    </header>
+    <form id="quiz-wrap"></form>
+
+    
+    <script>
+    // menu
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+</body>
+</html>

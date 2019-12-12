@@ -1,0 +1,220 @@
+/* rester */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* basic styling */
+html, body {
+    height: 100%;
+    width: 100%;
+    color: #fff !important;
+}
+
+/* header */
+header {
+    height: 100vh;
+    width: 100%;
+    border-left: none;
+    background: url(../img/darkmatter-header.jpg) center center/cover;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.logo a:link, .logo a:hover, .logo a:focus, .logo a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+#front {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1188px) {
+    .text-container {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* bootstrap menu */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px;}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* content */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131931;
+}
+
+.dual-container {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    padding: 5rem;
+}
+
+.dual-container img {
+    flex: 1;
+}
+
+.text {
+    padding: 0 5rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+@media screen and (max-width: 1720px) {
+    .dual-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .dual-container img {
+        margin-bottom: 0.75rem;
+        margin-top: 0.75rem;
+        height: 60%;
+        width: 80%;
+        padding: 2rem 0;
+    }
+
+    .text {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dual-container {
+        padding: 0;
+    }
+    html, body {
+        font-size: 12px;
+    }
+}
+
+/* image layers */
+.image-layer-1 {
+    background: url(../img/darkmatter-layer-1.jpg) #000000 center center/cover;
+    height: 75vh;
+    width: 100%;
+}
+
+.image-layer-2 {
+    background: url(../img/darkmatter-layer-2.jpg) #000000 center center/cover;
+    height: 75vh;
+    width: 100%;
+}
+
+/* footer */
+#footer {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    background-color: #0F1320;
+    display: flex;
+    justify-content: center;
+}
+
+#footer #centerer {
+    text-align: center;
+    padding: 1rem;
+}
+
+#footer h3 {
+    font-size: 3rem;
+}
+
+#footer li {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+#footer a:link, #footer a:hover, #footer a:focus, #footer a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    html, body {
+        font-size: 12px;
+    }
+    #front {
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
+}
